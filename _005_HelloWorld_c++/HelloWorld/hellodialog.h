@@ -11,7 +11,7 @@ class HelloDialog;
 class HelloDialog : public QDialog
 {
     //扩展普通C++类的功能，例如常见的信号和槽的功能必须在此类定义的最开始处定义宏,加上之后再链接时候会报错error: undefined reference to `vtable for HelloDialog'
-//    Q_OBJECT
+    Q_OBJECT
 public:
     //构造函数，参数是用来指定父窗口，默认没有父窗口
     explicit HelloDialog(QWidget *parent = 0);
@@ -22,3 +22,4 @@ private:
 };
 
 #endif // HELLODIALOG_H
+
